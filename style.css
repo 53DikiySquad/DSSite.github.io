@@ -22,10 +22,11 @@ d {
     font-size: 28px;
 }
 
+/*
 #game {
     color:#002CFF;
     font-size: 28px;
-}
+} */
 
 #counter-text {
     color:#8A5CE1;
@@ -42,6 +43,7 @@ d {
     font-size: 28px;
 }
 
+/*
 #ds:hover {
     background-color:#191919;
     border: 3px solid #5F0680;
@@ -52,7 +54,7 @@ d {
     box-shadow: 3px 3px 5px #000000;
     display: block;
     text-align: center;
-}
+} */
 
 #yadisk:hover {
     background-color:#191919;
@@ -67,6 +69,7 @@ d {
     color: #002CFF;
 }
 
+/*
 #game:hover {
     background-color:#191919;
     border: 3px solid #5F0680;
@@ -78,7 +81,7 @@ d {
     display: block;
     text-align: center;
     color: #002CFF;
-}
+} */
 
 #yt:hover {
     background-color:#191919;
