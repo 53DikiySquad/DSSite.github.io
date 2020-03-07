@@ -1,5 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url(fon.jpg);
+    margin: 0;
+    font-family: sans-serif;
 }
 
 a {
@@ -15,6 +21,11 @@ b {
 d {
     color:#8A5CE1;
     font-size: 28px;
+}
+
+li {
+    color: #8A5CE1;
+    font-size: large;
 }
 
 #yadisk {
@@ -42,6 +53,41 @@ d {
     color:#8A5CE1;
     font-size: 28px;
 }
+
+#audio {
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*
+#clicker {
+    position: absolute;
+    left: 2%;
+}
+
+#counter-text {
+    position: absolute;
+    top: 51%;
+    left: 3%;
+}
+
+#text {
+    position: absolute;
+    top: 52%;
+    left: 17%;
+}
+
+#save {
+    position: absolute;
+    top: 56%;
+    left: 3%;
+}
+
+#load {
+    position: absolute;
+    top: 56%;
+    left: 8%;
+} */
 
 /*
 #ds:hover {
