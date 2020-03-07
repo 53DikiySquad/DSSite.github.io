@@ -8,6 +8,16 @@ body {
     font-family: sans-serif;
 }
 
+button {
+    background-color: #5F0680;
+    border-radius: 7px;
+}
+
+li {
+    color: #8A5CE1;
+    font-size: large;
+}
+
 a {
     color:red;
     font-size: 28px;
@@ -16,16 +26,6 @@ a {
 b {
     color:#8A5CE1;
     font-size: 28px;
-}
-
-d {
-    color:#8A5CE1;
-    font-size: 28px;
-}
-
-li {
-    color: #8A5CE1;
-    font-size: large;
 }
 
 #yadisk {

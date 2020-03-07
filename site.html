@@ -27,7 +27,7 @@
             </ul>
         </header>
 
-        <hr/> <br/>
+        <hr/>
 
         <article>
             <form name = "form" method = "post">
@@ -38,36 +38,38 @@
                 <input id = "text" type = "text" placeholder = "Поиск..." title = "Поиск" maxlength = "22"/>
                 <input id = "button" type = "button" value = "Найти" name = "text" title = "Найти"/> <br/> <br/> -->
                 <!-- <input id = "reset" type = "reset" value = "Перезагрузить сайт" title = "Перезагрузить сайт"/> -->
+                <ul>
+                    <li> <b id = "tik-text" title = "Текст нажатия"> <strong> <em> <u> Тыкай на ПК! </u> </em> </strong> </b> </li> <br/>
+                    <a id = "clicker" href = "#clicker" onclick = "add()" id = "iconbtn"> <img src = "computer.ico" width = "100" height = "100" title = "Тыкай!"> </a> <br/> <br/>
+                    <li> <b id = "counter-text" title = "Текст счётчика"> <strong> <em> <u> Твой счёт: </u> </em> </strong> </b> </li> <br/>
+                    <input type = "text" id = "text" disabled = "disabled" style = "text-align: center;" title = "Счётчик"/>
+                    
+                    <script>
+                        function add() {
+                            counter = counter + 1
+                            document.getElementById('text').value = counter;
+                            document.title = counter + " Counts"
+                        }
+                    </script> <br/> <br/>
 
-                <a id = "clicker" href = "#clicker" onclick = "add()" id = "iconbtn"> <img src = "computer.ico" width = "100" height = "100" title = "Тыкай!"> </a> <br/> <br/>
-                <d id = "counter-text" title = "Текст счётчика"> <strong> <em> <u> Your counter: </u> </em> </strong> </d>
-                <input type = "text" id = "text" disabled = "disabled" style = "text-align: center;" title = "Счётчик"/>
-                
-                <script>
-                    function add() {
-                        counter = counter + 1
-                        document.getElementById('text').value = counter;
-                        document.title = counter + " Counts"
-                    }
-                </script> <br/> <br/>
+                    <button> <b href = "#save" onclick = "save()" id = "save" title = "Сохранить"> <strong> <em> <u> Save </u> </em> </strong> </b> </button>
+                    <button> <b href = "#load" onclick = "load()" id = "load" title = "Загрузить"> <strong> <em> <u> Load </u> </em> </strong> </b> </button>
+                    
+                    <script>
+                        function save() {
+                            localStorage.setItem("counter", counter);
+                        }
+                    </script>
 
-                <button> <d href = "#save" onclick = "save()" id = "save" title = "Сохранить"> <strong> <em> <u> Save </u> </em> </strong> </d> </button>
-                <button> <d href = "#load" onclick = "load()" id = "load" title = "Загрузить"> <strong> <em> <u> Load </u> </em> </strong> </d> </button>
-                
-                <script>
-                    function save() {
-                        localStorage.setItem("counter", counter);
-                    }
-                </script>
-
-                <script>
-                    function load() {
-                        counter = localStorage.getItem("counter");
-                        counter = parceInt(counter);
-                        document.getElementById("text").value = counter;
-                        document.title = counter + " Counter";
-                    }
-                </script>
+                    <script>
+                        function load() {
+                            counter = localStorage.getItem("counter");
+                            counter = parceInt(counter);
+                            document.getElementById("text").value = counter;
+                            document.title = counter + " Counter";
+                        }
+                    </script>
+                </ul>
             </form>
         </article>
 
